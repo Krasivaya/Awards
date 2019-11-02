@@ -7,6 +7,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^$', views.index, name= 'index'),
     url(r'^search/', views.search_projects, name='search_results'),
+    url(r'^project/(\d+)', views.get_project, name='project_results'),
 
 ]
 
