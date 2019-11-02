@@ -97,5 +97,10 @@ def user_profiles(request):
     return render(request, 'registration/profile.html', {"form":form, "projects":projects})
 
 
+class ProjectList(APIView):
+    def get(self, request, format=None):
+        all_project = Projects.objects.all()
+        serializers = ProjectSerializer(all_project, many=True)
+        return Response(serializers.data)
     
     
