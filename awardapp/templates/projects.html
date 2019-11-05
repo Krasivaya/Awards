@@ -18,7 +18,7 @@
           <img class="card-img-top" src="{{project.project_image.url}}" alt="{{ project.project_name }}"
            style="max-height: 400px;">
           {% else %}
-          <img class="card-img-top" src="{% static 'images/default.png' %}"
+          <img class="card-img-top" src="../../static/images/default.png"
             alt="{{ project.project_name }}">
           {% endif %}
           <a href="#!">
@@ -64,9 +64,10 @@
           <h5 class="pt-2">CREDITS</h5>
           <hr>
           <small class="ml-2"><img src="{{ project.Author.profile.photo.url }}" alt="" class="rounded-circle img-fluid mr-1" style="width: 50px;">
-             <b>{{project.Author.first_name|upper}}</b> 
-             <span class="ml-1 mr-1"> <i>From</i> <b>{{project.country.name}}</b></span>
-            <span style="color: #1ab090;">{{project.Author.email}}</span>
+            <b>{{project.Author.first_name|upper}}</b> 
+            <span class="ml-1 mr-1"> <i>From</i> <b>{{project.country.name}}</b></span>
+            <!-- <span><b>{{project.Author.profile.bio}}</b></span><br> -->
+            <p style="color: #1ab090; cursor: pointer;margin-left: 65px; margin-top: -18px;">{{project.Author.email}}</p>
           </small>
         </div>
       </div>

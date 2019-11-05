@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<div style="background:url('/media/images/home03.jpg'); height: 100vh; background-size: cover; background-position: center;"> 
+<div style="background:url('/media/images/home01.jpg'); height: 100vh; background-size: cover; background-position: center;"> 
   <div id="intro">
     <div class="mask rgba-black-strong" style="height: 100vh;">
       <div class="container-fluid d-flex align-items-center justify-content-center h-50">
@@ -38,13 +38,13 @@
               {% if project_item.project_image %}
               <a href="/project/{{project_item.id}}">
                 <img class="card-img-top" src="{{project_item.project_image.url}}" alt="{{ project_item.project_name }}" height="300px">
-                <p id="overlay"class="text"> 
+                <!-- <p id="overlay"class="text"> 
                   <button class="btn btn-default btn-circle btn-lg" ><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></button>
-                </p>
+                </p> -->
               </a>
               {% else %}
               <a href="/project/{{project_item.id}}">
-                <img  class="card-img-top" src="{% static 'images/default.png' %}" alt="{{ project_item.project_name }}">
+                <img  class="card-img-top" src="../../static/images/default.png" alt="{{ project_item.project_name }}">
                 <p id="overlay"class="text"> 
                   <button class="btn btn-default btn-circle btn-lg" ><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></button>
                 </p>
