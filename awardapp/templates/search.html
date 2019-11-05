@@ -40,7 +40,7 @@
                 </a>
                 {% else %}
                 <a href="/project/{{project_item.id}}">
-                <img  class="card-img-top" src="https://source.unsplash.com/1600x900/?fun,vacation" alt="{{ project_item.project_name }}">
+                <img  class="card-img-top" src="{% static 'images/default.png' %}" alt="{{ project_item.project_name }}">
                 </a>
                 {% endif %}
                 <a href="/project/{{project_item.id}}">
