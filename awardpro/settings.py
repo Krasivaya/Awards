@@ -60,7 +60,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'star_ratings',
     'django_countries',
-    'awardapp.apps.AwardappConfig',
+    'awardapp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
